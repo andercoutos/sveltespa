@@ -5,7 +5,7 @@ npm install && composer install && npm run dev
 
 ## todo
 - [x] criar /sveltespa
-- [ ] testar o stores
+- [x] testar o stores
 - [ ] adicionar jquery
 - [ ] rotear 2 componentes
 - [ ] testar com apache e php
