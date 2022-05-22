@@ -1,14 +1,20 @@
 # single page application em svelte e php
 
 ## instalação
-npm install && composer install && npm run dev
+
+```bash
+npm install &&
+composer install &&
+npm run build &&
+php -S localhost:8000 -t public
+```
 
 ## todo
 - [x] criar /sveltespa
 - [x] testar o stores
 - [x] adicionar jquery
-- [ ] rotear 2 componentes
-- [ ] testar com apache e php
-- [ ] reescrever url
-- [ ] reescrever histórico
-- [ ] recarregar usando popstate e stores
+- [x] rotear 2 componentes
+- [x] testar com php
+- [ ] reescrever url com window.history
+- [ ] reescrever histórico com window.history
+- [ ] recarregar o conteúdo assincronamente usando popstate e stores
