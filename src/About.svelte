@@ -2,7 +2,7 @@
 const jquery = window.$;
 document.title="about";
 jquery(function(){
-	jquery.get("data.php", function(data, status){
+	jquery.get("/data.php", function(data, status){
 		var html="Data: " + data + "<br>Status: " + status;
 		jquery('#data').html(html);
 	});
