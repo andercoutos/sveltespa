@@ -22,7 +22,7 @@ function alterarAUrl(url,title,dataContainer){
 
 // abrir página diretamente
 
-jquery( window ).on( "load", function() {
+jquery( function() {
 	var path= window.location.pathname.split('/')[1];
 	path=encodeURI(path);
 	if(!path){
