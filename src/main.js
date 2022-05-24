@@ -1,6 +1,7 @@
 const jquery = window.$;
 import {router} from './router.js';
-// funções
+
+// funções:
 function abrirComponenteDaUrl(url,title,dataContainer){
 	jquery(dataContainer).html('');
 	var path=url.split('/')[1];
@@ -18,7 +19,7 @@ function alterarAUrl(url,title,dataContainer){
 	window.history.pushState(state, '', url);
 }
 
-// gatilhos
+// gatilhos:
 
 // abrir página diretamente
 
