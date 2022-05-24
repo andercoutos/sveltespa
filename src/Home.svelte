@@ -1,5 +1,4 @@
 <script>
-const jquery = window.$;
 document.title="home";
 jquery(function(){
 	jquery.get("data.php", function(data, status){
