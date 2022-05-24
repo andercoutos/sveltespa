@@ -1,5 +1,9 @@
 <script>
 document.title="about";
+export let answer;
 </script>
-<h2>about</h2>
-<a href="/">home</a>
+
+<div id="container">
+<h2>about {answer}</h2>
+<a href="/home" data-container="body" title="home">home</a>
+</div>
