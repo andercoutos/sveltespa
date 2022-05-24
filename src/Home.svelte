@@ -12,5 +12,5 @@ jquery(function(){
 <div id="container">
 <h2>home</h2>
 <p id="data"></p>
-<a href="/about" data-container="#container" title="About">about</a>
+<a href="/about" data-container="#container" title="about">about</a>
 </div>

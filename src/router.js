@@ -2,6 +2,7 @@ import Home from './Home.svelte';
 import About from './About.svelte';
 export const router=function(path,targetSelector){
 	switch(path){
+		case '/':
 		case 'home':
 		new Home({
 			target: document.querySelector(targetSelector)

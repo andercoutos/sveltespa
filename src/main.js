@@ -45,7 +45,11 @@ jquery(function(){
 			var url=jquery(e.target).attr('href');
 			jquery(dataContainer).html('');
 			path=url.split('/')[1];
+			if(!path){
+				path='/';
+			}
 			router(path,dataContainer);
+			alterarAUrl(url,title);
 			return false;
 		}else{
 			return true;

@@ -17,6 +17,6 @@ php -S localhost:8000 -t public
 - [x] testar com php
 - [x] incorporar o roteador em todas as páginas
 - [x] atualizar as páginas usando ajax e containers
-- [ ] reescrever url com window.history
+- [x] reescrever url com window.history
 - [ ] reescrever histórico com window.history
-- [ ] recarregar o conteúdo assincronamente usando popstate e stores
+- [ ] recarregar o conteúdo assincronamente usando popstate
