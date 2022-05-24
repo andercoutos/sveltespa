@@ -14,7 +14,6 @@ php -S localhost:8000 -t public
 - [x] adicionar jquery
 - [x] rotear 2 componentes
 - [x] servir as páginas com php
-- [x] incorporar o roteador em todas as páginas
 - [x] atualizar as páginas usando ajax e containers
 - [x] reescrever url com window.history
 - [x] reescrever histórico com window.history
