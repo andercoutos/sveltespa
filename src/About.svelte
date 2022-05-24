@@ -1,9 +1,16 @@
 <script>
+const jquery = window.$;
 document.title="about";
-export let answer;
+jquery(function(){
+	jquery.get("data.php", function(data, status){
+		var html="Data: " + data + "<br>Status: " + status;
+		jquery('#data').html(html);
+	});
+});
 </script>
 
 <div id="container">
-<h2>about {answer}</h2>
-<a href="/home" data-container="body" title="home">home</a>
+<h2>about</h2>
+<p id="data"></p>
+<a href="/home" data-container="#container" title="home">home</a>
 </div>

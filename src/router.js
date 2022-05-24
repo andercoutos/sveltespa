@@ -1,20 +1,15 @@
 import Home from './Home.svelte';
 import About from './About.svelte';
-export const router=function(path,id){
+export const router=function(path,targetSelector){
 	switch(path){
 		case 'home':
 		new Home({
-			target: document.body,
-			hydrate: false,
+			target: document.querySelector(targetSelector)
 		});
 		break;
 		case 'about':
 		new About({
-			target: document.body,
-			hydrate: false,
-			props: {
-				answer: 42
-			}
+			target: document.querySelector(targetSelector)
 		});
 		break;
 		default:

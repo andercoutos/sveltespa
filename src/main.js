@@ -25,24 +25,27 @@ function ucfirst(str) {
 // gatilhos
 jquery(function(){
 	var path= window.location.pathname.split('/')[1];
+	path=encodeURI(path);
 	if(path){
-		router(path);
+		router(path,'body');
 	}else{
-		router('home');
-	}	
+		router('home','body');
+	}
 	document.addEventListener('click', e => {
 		var dataContainer=$(e.target).attr('data-container');
 		if(
+			dataContainer &&
 			e.target.tagName.toLowerCase() == 'a' &&
-			dataContainer
+			!e.ctrlKey &&
+			!e.shiftKey
 		) {
 			e.stopPropagation();
 			e.preventDefault();
 			var title=jquery(e.target).attr('title');
 			var url=jquery(e.target).attr('href');
-			jquery('body').html('');
+			jquery(dataContainer).html('');
 			path=url.split('/')[1];
-			router(path);
+			router(path,dataContainer);
 			return false;
 		}else{
 			return true;
