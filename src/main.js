@@ -4,22 +4,10 @@ import {router} from './router.js';
 // funções
 function alterarAUrl(url,title){
 	var state = {
-		id: (new Date).getTime(),
-		url: url,
-		title: title
-	};
-	window.history.replaceState(state, '', url);
-}
-function alterarOHistorico(url,title){
-	var state = {
-		id: (new Date).getTime(),
 		url: url,
 		title: title
 	};
 	window.history.pushState(state, '', url);
-}
-function ucfirst(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 // gatilhos
