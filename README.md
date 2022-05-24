@@ -11,10 +11,9 @@ php -S localhost:8000 -t public
 
 ## todo
 - [x] criar /sveltespa
-- [x] testar o stores
 - [x] adicionar jquery
 - [x] rotear 2 componentes
-- [x] testar com php
+- [x] servir as páginas com php
 - [x] incorporar o roteador em todas as páginas
 - [x] atualizar as páginas usando ajax e containers
 - [x] reescrever url com window.history
